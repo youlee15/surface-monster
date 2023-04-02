@@ -14,17 +14,33 @@ const Definitions = new class {
     }
 }(data);
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+            const el = entry.target;
+            const id = el.dataset.id;
+            Cursor.current = id;
+        }
+    });
+}, {
+    root: container,
+    threshold: 0.5
+});
+
 for (const monster of Definitions.data.monsters) {
     createMonsterElements(monster);
 }
 
 function createMonsterElements(definition) {
+    const id = String(definition.id);
+
     const clone = template.content.cloneNode(true);
     const monster = clone.querySelector('.monster-container');
-    monster.dataset.id = definition.id;
+    monster.dataset.id = id;
+    observer.observe(monster);
 
     const name = clone.querySelector('.monster-name');
-    name.textContent = definition.name;
+    name.textContent = `${id.padStart(3, '0')}: ${definition.name}`;
     const type = clone.querySelector('.monster-type');
     const typeName = Definitions.getTypeName(definition.type);
     type.textContent = typeName;
@@ -90,7 +106,7 @@ const Cursor = new class {
             return;
         }
         this.current++;
-        this.#scroll();
+        this.scroll();
     }
 
     #toPrev() {
@@ -98,10 +114,10 @@ const Cursor = new class {
             return;
         }
         this.current--;
-        this.#scroll();
+        this.scroll();
     }
 
-    #scroll() {
-        document.querySelector(`.monster-container[data-id="${this.current}"]`).scrollIntoView();
+    scroll(id) {
+        document.querySelector(`.monster-container[data-id="${id ?? this.current}"]`).scrollIntoView();
     }
 }(data);

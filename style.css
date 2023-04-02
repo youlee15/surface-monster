@@ -51,9 +51,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    overflow: scroll;
+    overflow: auto;
     scroll-snap-type: x mandatory;
-    scroll-snap-align: center;
     scroll-behavior: smooth;
 }
 
@@ -77,6 +76,7 @@ th, td {
     justify-content: flex-start;
     gap: 1rem;
     padding: 1rem;
+    scroll-snap-align: center;
 }
 
 .monster-head {
