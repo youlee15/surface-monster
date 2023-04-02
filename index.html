@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サーフェス・モンスター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ui-button" id="prev">
+        <img src="ui-img/prev.svg" alt="◁">
+    </div>
+    <div class="container">
+
+    </div>
+    <div class="ui-button" id="next">
+        <img src="ui-img/next.svg" alt="▷">
+    </div>
+
+    <template id="monster">
+        <div class="monster-container">
+            <header class="monster-head">
+                <div class="monster-name">なまえ</div>
+                <div class="monster-type">タイプ</div>
+            </header>
+            <div class="monster-image">
+                <img src="" alt="monster" loading="lazy">
+            </div>
+            <div class="monster-exp">せつめい</div>
+            <div class="monster-details">
+                <table class="monster-status">
+                    <tr>
+                        <th>かたさ</th>
+                        <td class="status-hardness"></td>
+                    </tr>
+                    <tr>
+                        <th>だんりょく</th>
+                        <td class="status-elasticity"></td>
+                    </tr>
+                    <tr>
+                        <th>はやさ</th>
+                        <td class="status-agility"></td>
+                    </tr>
+                    <tr>
+                        <th>かしこさ</th>
+                        <td class="status-cleverness"></td>
+                    </tr>
+                    <tr>
+                        <th>たいりょく</th>
+                        <td class="status-stamina"></td>
+                    </tr>
+                </table>
+                <table class="monster-skill">
+                    <tr>
+                        <th class="monster-skill_name">わざ</th>
+                        <th class="monster-skill_power">いりょく</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </template>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

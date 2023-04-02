@@ -1,0 +1,131 @@
+{
+    "types": [{
+        "id": 0,
+        "name": "ちくちく"
+    }, {
+        "id": 1,
+        "name": "ごつごつ"
+    }, {
+        "id": 2,
+        "name": "ぬめぬめ"
+    }, {
+        "id": 3,
+        "name": "ぷにぷに"
+    }, {
+        "id": 4,
+        "name": "ふわふわ"
+    }, {
+        "id": 5,
+        "name": "つるつる"
+    }, {
+        "id": 6,
+        "name": "かさかさ"
+    }, {
+        "id": 7,
+        "name": "どろどろ"
+    }, {
+        "id": 8,
+        "name": "さらさら"
+    }],
+    "monsters": [{
+        "id": 1,
+        "name": "フン・ボルカガイド",
+        "type": 0,
+        "exp": "ちくちくしたとげが けっこういたい。つよい あいてでも ダメージがあるぞ。",
+        "status": {
+            "hardness": 4,
+            "elasticity": 7,
+            "agility": 7,
+            "cleverness": 3,
+            "stamina": 6
+        },
+        "skills": [{
+            "name": "ボイス",
+            "power": 2
+        }]
+    }, {
+        "id": 2,
+        "name": "ノロイノロイター",
+        "type": 1,
+        "exp": "じぶんが がんじょうだから あいてのこうげきも うけないときもある。",
+        "status": {
+            "hardness": 10,
+            "elasticity": 0,
+            "agility": 3,
+            "cleverness": 7,
+            "stamina": 9
+        },
+        "skills": [{
+            "name": "いわぐらし",
+            "power": 8
+        }]
+    }, {
+        "id": 3,
+        "name": "スリデノロティブ",
+        "type": 2,
+        "exp": "べとべとしているから てきにおそわれにくくなる。",
+        "status": {
+            "hardness": 0,
+            "elasticity": 4,
+            "agility": 6,
+            "cleverness": 3,
+            "stamina": 8
+        },
+        "skills": [{
+            "name": "べとべとスライド",
+            "power": 9
+        }]
+    }, {
+        "id": 4,
+        "name": "グル",
+        "type": 7,
+        "exp": "",
+        "status": {
+
+        }
+    }, {
+        "id": 5,
+        "name": "ダンコタコ",
+        "type": 3
+    }, {
+        "id": 6,
+        "name": "タイキングロマ",
+        "type": 6
+    }, {
+        "id": 7,
+        "name": "ブカギキク",
+        "type": 8
+    }, {
+        "id": 8,
+        "name": "ノロマン",
+        "type": 5
+    }, {
+        "id": 9,
+        "name": "マオロノタニ",
+        "type": 4
+    }, {
+        "id": 10,
+        "name": "ウウンドウ",
+        "type": 1
+    }, {
+        "id": 11,
+        "name": "ウーンドウーエッド",
+        "type": 1
+    }, {
+        "id": 12,
+        "name": "トゲマサキ",
+        "type": 0
+    }, {
+        "id": 13,
+        "name": "ユレユレユレユ",
+        "type": 2
+    }, {
+        "id": 14,
+        "name": "フタフタフタリキ",
+        "type": 5
+    }, {
+        "id": 15,
+        "name": "ジューシバーシ",
+        "type": 6
+    }]
+}
