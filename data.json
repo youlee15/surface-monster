@@ -79,54 +79,167 @@
         "id": 4,
         "name": "グル",
         "type": 7,
-        "exp": "",
+        "exp": "どろどろの うみの仲間。おそわれそうになったら どろどろの うみになる。",
         "status": {
-
-        }
+            "hardness": 1,
+            "elasticity": 3,
+            "agility": 7,
+            "cleverness": 5,
+            "stamina": 8
+        },
+        "skills": [{
+            "name": "どろどろのうみ",
+            "power": 5
+        }]
     }, {
         "id": 5,
         "name": "ダンコタコ",
-        "type": 3
+        "type": 3,
+        "exp": "すごくぷにぷにで だんりょくが すごくすごくつよい。すごくかしこい。",
+        "status": {
+            "hardness": 0,
+            "elasticity": 10,
+            "agility": 5,
+            "cleverness": 10,
+            "stamina": 9
+        },
+        "skills": [{
+            "name": "しょしゅう",
+            "power": 9
+        }]
     }, {
         "id": 6,
         "name": "タイキングロマ",
-        "type": 6
+        "type": 6,
+        "exp": "ブンブンと すばやくとぶが たいりょくが1だから こうげきされたら ちょっとやばい。だけどすばやさがすごくはやい。",
+        "status": {
+            "hardness": 1,
+            "elasticity": 5,
+            "agility": 10,
+            "cleverness": 10,
+            "stamina": 1
+        },
+        "skills": [{
+            "name": "ブンブンのはね",
+            "power": 2
+        }]
     }, {
         "id": 7,
         "name": "ブカギキク",
-        "type": 8
+        "type": 8,
+        "exp": "すっごくさらさらですごくヤバいのです。",
+        "status": {
+            "hardness": 8,
+            "elasticity": 0,
+            "agility": 1,
+            "cleverness": 10,
+            "stamina": 10
+        },
+        "skills": []
     }, {
         "id": 8,
         "name": "ノロマン",
-        "type": 5
+        "type": 5,
+        "exp": "てつのこぶしを やってゆだんする。だけどかしこさが0だから いつもゆだんしてやられる。",
+        "status": {
+            "hardness": 7,
+            "elasticity": 3,
+            "agility": 1,
+            "cleverness": 0,
+            "stamina": 10
+        },
+        "skills": []
     }, {
         "id": 9,
         "name": "マオロノタニ",
-        "type": 4
+        "type": 4,
+        "exp": "ふっわふわのやつで 70どごえのあっついあっつい ふわふわわたげで てきをたおす。",
+        "status": {
+            "hardness": 0,
+            "elasticity": 9,
+            "agility": 7,
+            "cleverness": 5,
+            "stamina": 9
+        },
+        "skills": []
     }, {
         "id": 10,
         "name": "ウウンドウ",
-        "type": 1
+        "type": 1,
+        "exp": "かたいのにバカだし おそいし かしこくもないやつだが たいりょくがすごくたかいからつよい。",
+        "status": {
+            "hardness": 10,
+            "elasticity": 0,
+            "agility": 0,
+            "cleverness": 0,
+            "stamina": 10
+        },
+        "skills": []
     }, {
         "id": 11,
         "name": "ウーンドウーエッド",
-        "type": 1
+        "type": 1,
+        "exp": "雪山では はやさは10になるのです。",
+        "status": {
+            "hardness": 8,
+            "elasticity": 2,
+            "agility": 5,
+            "cleverness": 0,
+            "stamina": 5
+        },
+        "skills": []
     }, {
         "id": 12,
         "name": "トゲマサキ",
-        "type": 0
+        "type": 0,
+        "exp": "トゲトゲがあるから すごいトゲトゲトゲがあるから すごいつよい。",
+        "status": {
+            "hardness": 5,
+            "elasticity": 3,
+            "agility": 3,
+            "cleverness": 5,
+            "stamina": 8
+        },
+        "skills": []
     }, {
         "id": 13,
         "name": "ユレユレユレユ",
-        "type": 2
+        "type": 2,
+        "exp": "からだのまわりが ぬめぬめで 歌うのもだいすきで あそぶのもだいすき。",
+        "status": {
+            "hardness": 7,
+            "elasticity": 9,
+            "agility": 5,
+            "cleverness": 5,
+            "stamina": 5
+        },
+        "skills": []
     }, {
         "id": 14,
         "name": "フタフタフタリキ",
-        "type": 5
+        "type": 5,
+        "exp": "くるまと雪山トウドののりもののくるま。",
+        "status": {
+            "hardness": 10,
+            "elasticity": 0,
+            "agility": 10,
+            "cleverness": 9,
+            "stamina": 5
+        },
+        "skills": []
     }, {
         "id": 15,
         "name": "ジューシバーシ",
-        "type": 6
+        "type": 6,
+        "exp": "やっわらかいやつの人なのだ。",
+        "status": {
+            "hardness": 1,
+            "elasticity": 9,
+            "agility": 3,
+            "cleverness": 1,
+            "stamina": 2
+        },
+        "skills": []
     }, {
         "id": 16,
         "name": "ナトナドン",
@@ -134,7 +247,16 @@
     }, {
         "id": 17,
         "name": "ナットン＆エザ",
-        "type": 3
+        "type": 3,
+        "exp": "イケメンのかおをして てきをひるませる。",
+        "status": {
+            "hardness": 3,
+            "elasticity": 7,
+            "agility": 7,
+            "cleverness": 10,
+            "stamina": 3
+        },
+        "skills": []
     }, {
         "id": 18,
         "name": "クママロズー",

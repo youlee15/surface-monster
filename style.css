@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
 :root {
     --color-background: #F0F0F0;
     --color-border: #8899AA;
@@ -17,6 +19,7 @@ html {
 }
 
 body {
+    font-family: 'DotGothic16', sans-serif;
     background-color: var(--color-background);
     display: flex;
     flex-direction: row;
@@ -144,6 +147,7 @@ th, td {
 .monster-status td {
     width: auto;
     border: 1px solid var(--color-border);
+    color: darkorange;
 }
 
 .monster-skill th,
