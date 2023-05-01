@@ -2,7 +2,8 @@
 
 :root {
     --color-background: #F0F0F0;
-    --color-border: #8899AA;
+    --color-border: #908888;
+    --color-gray: #A09999;
 }
 
 html {
@@ -73,7 +74,8 @@ th, td {
     min-width: 100%;
     max-width: 100%;
     display: flex;
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -136,11 +138,13 @@ th, td {
 }
 
 .monster-status {
-    width: 30rem;
+    width: 40rem;
 }
 
 .monster-status th {
-    width: 12rem;
+    background-color: var(--color-gray);
+    color: white;
+    width: 10rem;
     border: 1px solid var(--color-border);
 }
 
@@ -150,9 +154,16 @@ th, td {
     color: darkorange;
 }
 
+.monster-skill th {
+    background-color: var(--color-gray);
+    color: white;
+}
+
 .monster-skill th,
 .monster-skill td {
-    border: 1px solid var(--color-border);
+    border-style: solid none solid none;
+    border-color: var(--color-border);
+    border-width: 1px;
 }
 
 .monster-skill_name {
@@ -175,6 +186,10 @@ th, td {
 
     .monster-head {
         flex-direction: column;
+    }
+
+    .monster-name {
+        font-size: 2.2rem;
     }
 
     .monster-details {
