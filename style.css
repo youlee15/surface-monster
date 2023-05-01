@@ -129,7 +129,7 @@ th, td {
 }
 
 .monster-details {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -137,24 +137,21 @@ th, td {
     gap: 1rem;
 }
 
-.monster-status {
-    width: 40rem;
-}
-
 .monster-status th {
     background-color: var(--color-gray);
     color: white;
-    width: 10rem;
     border: 1px solid var(--color-border);
+    white-space: nowrap;
 }
 
 .monster-status td {
-    width: auto;
+    width: 20rem;
     border: 1px solid var(--color-border);
     color: darkorange;
 }
 
 .monster-skill th {
+    white-space: nowrap;
     background-color: var(--color-gray);
     color: white;
 }
@@ -167,7 +164,7 @@ th, td {
 }
 
 .monster-skill_name {
-    width: 25rem;
+    min-width: 20rem;
 }
 
 .monster-skill_power {
