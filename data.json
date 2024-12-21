@@ -426,5 +426,18 @@
             "stamina": 7
         },
         "skills": []
+    }, {
+        "id": 31,
+        "name": "クラグン（ボス）",
+        "type": 6,
+        "exp": " クラグンのボス。「ヒヒヒ」と同じに行動している。「ヒヒヒ」と一緒に人を狩っている。「クラグン」とも仲間",
+        "status": {
+            "hardness": 2,
+            "elasticity": 5,
+            "agility": 10,
+            "cleverne": 5,
+            "stamina": 7
+        },
+        "skills": []
     }]
 }
